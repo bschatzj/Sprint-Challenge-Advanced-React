@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDarkMode } from './hooks/UseDarkMode';
+import styled from 'styled-components'
 
 export default function Nav() {
   const [darkMode, setDarkMode] = useDarkMode(false);
@@ -11,7 +12,7 @@ export default function Nav() {
 
   return (
     <div className='navbar'>
-      <h1>Google Trends: Women's World Cup Players</h1>
+      <h1>Women's World Cup Players</h1>
       <button onClick={toggleMode}>Dark Mode: {darkMode ? 'On' : 'Off'}</button>
     </div>
   );
